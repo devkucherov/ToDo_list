@@ -33,12 +33,12 @@ h1 {
   text-align: center; }
 
 input[type=text] {
-  width: 376px;
+  width: 94%;
   padding: 10px; }
 
 button {
   margin-top: 10px;
-  width: 95%;
+  width: 100%;
   padding: 10px;
   cursor: pointer; }
 
