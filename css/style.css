@@ -1,5 +1,5 @@
 body {
-  background-color: #CCCCCC;
+  background-color: #333;
   font-family: sans-serif;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
@@ -15,8 +15,8 @@ body {
 .todo_list {
   max-width: 400px;
   display: block;
-  margin: 0 auto 40px;
-  background-color: #FFCC00;
+  margin: 0 auto 20px;
+  background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   -webkit-box-shadow: 0 2px 10px 0 #000;
@@ -26,7 +26,7 @@ h1 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000;
   font-size: 30px; }
 
 .create_new_todo {
@@ -62,7 +62,7 @@ input[type=checkbox], label {
 
 input[type=checkbox] + label:before {
   content: '';
-  background: #FFCC00;
+  background: #fff;
   border-radius: 5px;
   border: 2px solid #ddd;
   display: inline-block;
@@ -85,3 +85,33 @@ input[type=checkbox]:checked + label:before {
   -ms-transform: rotate(45deg);
   border-radius: 0;
   margin: 0 15px 5px 5px; }
+
+.author {
+  max-width: 450px;
+  display: block;
+  margin: 0 auto 0 auto;
+  color: #999;
+  font-size: 13px;
+}
+
+.author_link {
+  color: #999;
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#999));
+  background-image: linear-gradient(#999, #999);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+a:hover {
+  background-size: 100% 1px;
+  cursor: pointer;
+}
